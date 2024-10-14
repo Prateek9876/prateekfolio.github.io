@@ -1,0 +1,541 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 9%;
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #00ffee;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: #00ffee;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: #00ffee;
+    border-bottom: 3px solid #00ffee;
+}
+
+@media(max-width:995px) {
+    nav {
+        position: absolute;
+        display: none;
+        top: 0;
+        right: 0;
+        width: 40%;
+        border-left: 3px solid #00ffee;
+        border-bottom: 3px solid #00ffee;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: #161616;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+
+    nav a:hover,
+    nav a.active {
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom: 0.5rem solid #00ffee;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    background-color: black;
+    color: azure;
+}
+
+.home .home-content h1 {
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* General styling for poster gallery */
+.poster-gallery {
+    padding-top: 5px;
+    margin-top: -7px;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #f5f1f1;
+    /* Red for the headings */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    background-color: #1c1c1c;
+    /* Dark background matching your layout */
+}
+
+.poster-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 20px;
+}
+
+.poster-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.poster-item:hover {
+    transform: translateY(-10px);
+}
+
+.poster-item img {
+    width: 97%;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+.poster-item:hover img {
+    opacity: 0.8;
+}
+
+.poster-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.poster-item:hover .poster-info {
+    opacity: 1;
+}
+
+.poster-info h3 {
+    font-size: 3rem;
+    margin: 0;
+    color: #ff6161;
+    /* Light red to match the buttons */
+    font-family: 'Playfair Display', serif;
+}
+
+.poster-info p {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .poster-row {
+        grid-template-columns: 1fr;
+        /* Single column for smaller screens */
+    }
+
+    .poster-info h3 {
+        font-size: 1.25rem;
+    }
+
+    .poster-info p {
+        font-size: 0.9rem;
+    }
+}
+
+#skills {
+    padding: 50px 0;
+    background-color: #111;
+    /* Matches dark theme */
+    color: #fff;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 30px;
+    color: #f5f1f1;
+    /* Red for the headings */
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows the items to wrap to the next line if they don’t fit */
+    justify-content: center;
+    /* Centers the icons */
+    gap: 30px;
+    /* Adds space between skill items */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    /* Width for each skill item */
+    margin-bottom: 20px;
+}
+
+.skill-item img {
+    width: 100px;
+    /* Logo size */
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    font-size: 1.8em;
+    color: #fff;
+    /* White text */
+}
+
+#education {
+    font-size: larger;
+    padding: 50px 0;
+    background-color: #111;
+    color: #fff;
+}
+
+#education h2 {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-item {
+    width: 80%;
+    background-color: #222;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h3 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.education-item p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #999;
+}
+
+.education-item strong {
+    color: #fff;
+}
+
+#experience {
+    font-size: larger;
+    padding: 50px 0;
+    background-color: #111; /* Matches dark theme */
+    color: #fff;
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 30px;
+    color: #fcf5f5; /* Red for the headings */
+}
+
+.experience-container {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items */
+    gap: 30px; /* Adds space between experience items */
+}
+
+.experience-item {
+    background-color: #222; /* Dark background for each experience item */
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%; /* Width of each experience item */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+}
+
+.experience-item h3 {
+    margin: 0;
+    font-size: 1.8em; /* Larger title font */
+}
+
+.experience-item p {
+    margin: 5px 0; /* Margin for paragraph elements */
+    font-size: 1em; /* Regular text size */
+}
+
+span {
+    color: #00ffee;
+}
+
+.home-content h3 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.home-img {
+    border-radius: 50%;
+}
+
+.home-img img {
+    position: relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #00ffee;
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+
+.home-img img:hover {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: transparent;
+    border: 0.2rem solid #00ffee;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #00ffee;
+}
+
+.social-icons a:hover {
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #00ffee;
+    box-shadow: 0 0 25px #00ffee;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: black;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #00ffee;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #00ffee;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: #00ffee;
+    color: black;
+    box-shadow: 0 0 25px #00ffee;
+}
+
+.typing-text {
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.typing-text span {
+    position: relative;
+}
+
+.typing-text span::before {
+    content: "Developer";
+    color: #00ffee;
+    animation: words 20s infinite;
+}
+
+.typing-text span::after {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid black;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+
+@keyframes cursor {
+    to {
+        border-left: 3px solid #00ffee;
+    }
+}
+
+@keyframes words {
+
+    0%,
+    20% {
+        content: "Web Dev";
+    }
+
+    21%,
+    40% {
+        content: "Developer";
+    }
+
+    41%,
+    60% {
+        content: "Web Designer";
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        gap: 4rem;
+    }
+}
+
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 5rem 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home-content h1 {
+        font-size: 5rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+}
+
+#thank-you {
+    padding: 40px 20px;
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    text-align: center; /* Center text */
+    margin-top: 50px; /* Space from the previous section */
+}
+
+#thank-you h2 {
+    font-size: 4em; /* Large heading size */
+    margin-bottom: 10px; /* Space below heading */
+    color: #e63946; /* Accent color */
+}
+
+#thank-you p {
+    font-size: 3em; /* Moderate size for the paragraph */
+    margin-bottom: 20px; /* Space below paragraph */
+}
+
+.contact-button {
+    display: inline-block; /* Inline block for button style */
+    padding: 10px 20px; /* Padding for button */
+    background-color: #e63946; /* Button color */
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 3em; /* Button text size */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.contact-button:hover {
+    background-color: #ad0614; /* Darker shade on hover */
+}
