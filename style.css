@@ -148,7 +148,7 @@ section {
 
 .poster-row {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 }
 
@@ -165,7 +165,7 @@ section {
 }
 
 .poster-item img {
-    width: 97%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     transition: opacity 0.3s ease;
