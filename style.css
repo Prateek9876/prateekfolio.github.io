@@ -25,28 +25,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.portfolio-title {
-    text-align: center;
-    font-size: 48px;
-    position: fixed;
-    margin-top: 20px;
-    color: #00ffee;
-    font-weight: bold;
-    animation: fadeInOut 2s infinite;
-}
-
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 html {
     font-size: 62.5%;
 }
