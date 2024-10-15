@@ -517,7 +517,7 @@ span {
 #thank-you h2 {
     font-size: 4em; /* Large heading size */
     margin-bottom: 10px; /* Space below heading */
-    color: #e63946; /* Accent color */
+    color: #00ffee; /* Accent color */
 }
 
 #thank-you p {
@@ -529,7 +529,7 @@ span {
     display: inline-block; /* Inline block for button style */
     padding: 10px 20px; /* Padding for button */
     background-color: #00ffee; /* Button color */
-    color: #fff; /* White text */
+    color: black; /* White text */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
     font-size: 3em; /* Button text size */
