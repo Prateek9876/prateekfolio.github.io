@@ -25,17 +25,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Style for the PORTFOLIO word with fade in/out animation */
 .portfolio-title {
     text-align: center;
     font-size: 48px;
     margin-top: 20px;
-    color: #00b4d8; /* You can change this to any color */
+    color: #00ffee;
     font-weight: bold;
     animation: fadeInOut 2s infinite;
 }
 
-/* Keyframes for fade in and fade out */
 @keyframes fadeInOut {
     0% {
         opacity: 0;
@@ -229,8 +227,7 @@ section {
 .poster-info h3 {
     font-size: 3rem;
     margin: 0;
-    color: #ff6161;
-    /* Light red to match the buttons */
+    color: #ff6161;
     font-family: 'Playfair Display', serif;
 }
 
@@ -240,8 +237,7 @@ section {
     color: #ffffff;
     font-family: 'Open Sans', sans-serif;
 }
-
-/* Mobile responsiveness */
+
 @media (max-width: 768px) {
     .poster-row {
         grid-template-columns: 1fr;
@@ -268,40 +264,34 @@ section {
     text-align: center;
     font-size: 4em;
     margin-bottom: 30px;
-    color: #f5f1f1;
-    /* Red for the headings */
+    color: #f5f1f1;
 }
 
 .skills-container {
     display: flex;
-    flex-wrap: wrap;
-    /* Allows the items to wrap to the next line if they don’t fit */
+    flex-wrap: wrap;
     justify-content: center;
     /* Centers the icons */
-    gap: 30px;
-    /* Adds space between skill items */
+    gap: 30px;
 }
 
 .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
-    /* Width for each skill item */
+    width: 30%;
     margin-bottom: 20px;
 }
 
 .skill-item img {
-    width: 100px;
-    /* Logo size */
+    width: 100px;
     height: 100px;
     margin-bottom: 10px;
 }
 
 .skill-item p {
     font-size: 1.8em;
-    color: #fff;
-    /* White text */
+    color: #fff;
 }
 
 #education {
@@ -352,7 +342,7 @@ section {
 #experience {
     font-size: larger;
     padding: 50px 0;
-    background-color: #111; /* Matches dark theme */
+    background-color: #111; 
     color: #fff;
 }
 
@@ -360,32 +350,32 @@ section {
     text-align: center;
     font-size: 4em;
     margin-bottom: 30px;
-    color: #fcf5f5; /* Red for the headings */
+    color: #fcf5f5;
 }
 
 .experience-container {
     display: flex;
-    flex-direction: column; /* Align items in a column */
+    flex-direction: column; 
     align-items: center; /* Center items */
-    gap: 30px; /* Adds space between experience items */
+    gap: 30px;
 }
 
 .experience-item {
-    background-color: #222; /* Dark background for each experience item */
+    background-color: #222; 
     padding: 20px;
     border-radius: 8px;
-    width: 80%; /* Width of each experience item */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for a lifted effect */
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .experience-item h3 {
     margin: 0;
-    font-size: 1.8em; /* Larger title font */
+    font-size: 1.8em; 
 }
 
 .experience-item p {
-    margin: 5px 0; /* Margin for paragraph elements */
-    font-size: 1em; /* Regular text size */
+    margin: 5px 0; 
+    font-size: 1em; 
 }
 
 span {
@@ -542,34 +532,34 @@ span {
 
 #thank-you {
     padding: 40px 20px;
-    background-color: #111; /* Dark background */
-    color: #fff; /* White text */
-    text-align: center; /* Center text */
-    margin-top: 50px; /* Space from the previous section */
+    background-color: #111; 
+    color: #fff; 
+    text-align: center; 
+    margin-top: 50px; 
 }
 
 #thank-you h2 {
-    font-size: 4em; /* Large heading size */
-    margin-bottom: 10px; /* Space below heading */
-    color: #00ffee; /* Accent color */
+    font-size: 4em; 
+    margin-bottom: 10px; 
+    color: #00ffee; 
 }
 
 #thank-you p {
-    font-size: 3em; /* Moderate size for the paragraph */
-    margin-bottom: 20px; /* Space below paragraph */
+    font-size: 3em;
+    margin-bottom: 20px; 
 }
 
 .contact-button {
-    display: inline-block; /* Inline block for button style */
-    padding: 10px 20px; /* Padding for button */
-    background-color: #00ffee; /* Button color */
-    color: black; /* White text */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners */
-    font-size: 3em; /* Button text size */
-    transition: background-color 0.3s ease; /* Smooth transition */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ffee; 
+    color: black; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 3em; 
+    transition: background-color 0.3s ease;
 }
 
 .contact-button:hover {
-    background-color: #ad0614; /* Darker shade on hover */
+    background-color: #ad0614;
 }
