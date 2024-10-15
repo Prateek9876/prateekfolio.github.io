@@ -528,7 +528,7 @@ span {
 .contact-button {
     display: inline-block; /* Inline block for button style */
     padding: 10px 20px; /* Padding for button */
-    background-color: #e63946; /* Button color */
+    background-color: #00ffee; /* Button color */
     color: #fff; /* White text */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
