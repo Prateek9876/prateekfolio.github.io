@@ -28,6 +28,7 @@ body {
 .portfolio-title {
     text-align: center;
     font-size: 48px;
+    position: fixed;
     margin-top: 20px;
     color: #00ffee;
     font-weight: bold;
